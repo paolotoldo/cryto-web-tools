@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="normalize.css">
+  <link rel="stylesheet" type="text/css" href="terminal.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="aes.js"></script>
+  <script src="pbkdf2.js"></script>
+  <script src="script.js"></script>
+</head>
+
+<body class="terminal">
+  <div class="container">
+    <section>
+      <header>
+        <h2 id="Forms">Encrypt/Decrypt</h2>
+      </header>
+      <form action="#">
+        <fieldset>
+          <legend>Data</legend>
+          <div class="form-group">
+            <label for="itext">Key</label>
+            <input id="key" type="text" minlength="1">
+          </div>
+          <div class="form-group">
+            <label for="tarea">Input Text:</label>
+            <textarea id="text" rows="10"></textarea>
+          </div>
+          <div class="form-group">
+            <button class="btn btn-default" onclick="encrypt()">Encrypt</button>
+            <button class="btn btn-default" onclick="decrypt()">Decrypt</button>
+          </div>
+          <div class="form-group">
+            <label for="tarea">Result:</label>
+            <textarea id="result" rows="10"></textarea>
+          </div>
+
+        </fieldset>
+      </form>
+    </section>
+  </div>
+</body>
+
+</html>
